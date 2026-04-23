@@ -1,0 +1,83 @@
+/* TenX Assessment — do not modify this header */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0f1115;
+  color: #f0f0f0;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 24px; }
+h1 { margin: 0 0 16px; font-size: 28px; }
+nav { display: flex; gap: 8px; margin-bottom: 24px; }
+nav button {
+  padding: 8px 16px;
+  background: #1a1d23;
+  color: #ccc;
+  border: 1px solid #2a2e36;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+nav button.active { background: #ff6a3d; color: white; border-color: #ff6a3d; }
+
+.matchup { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.card {
+  background: #1a1d23;
+  border: 1px solid #2a2e36;
+  border-radius: 8px;
+  padding: 24px;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card p { margin: 0 0 16px; font-size: 18px; line-height: 1.4; }
+.card button {
+  padding: 10px 16px;
+  background: #ff6a3d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.card button:hover { background: #ff844f; }
+
+form { display: flex; flex-direction: column; gap: 12px; max-width: 500px; }
+textarea {
+  padding: 12px;
+  background: #1a1d23;
+  color: #f0f0f0;
+  border: 1px solid #2a2e36;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+  min-height: 100px;
+  resize: vertical;
+}
+form button {
+  padding: 10px 16px;
+  background: #ff6a3d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  align-self: flex-start;
+}
+form button:disabled { opacity: 0.5; cursor: not-allowed; }
+.hint { font-size: 13px; color: #888; }
+.error { color: #ff6666; font-size: 14px; }
+.success { color: #4ade80; font-size: 14px; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #2a2e36;
+  font-size: 14px;
+}
+th { color: #888; font-weight: 500; text-transform: uppercase; font-size: 12px; }
+tr:hover { background: #161920; }
+.rank { font-weight: 700; color: #ff6a3d; width: 40px; }
+.score { font-variant-numeric: tabular-nums; font-weight: 600; }
